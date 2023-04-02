@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+            background-color: burlywood;
+            border-radius: 30px;
+
+        }
+
+        ul {
+
+            padding: 4px;
+            overflow: auto;
+
+        }
+
+        li {
+            padding: 15px;
+            list-style: none;
+            /* list style none we remove bullets */
+            float: left;
+            /* whenever we use float it gets overflows from parent therefore the background color doesnot show when we use only float left */
+            /* to overcome overflow we use overflow:auto */
+        }
+
+        a {
+            text-decoration: none;
+            /* with text decoration none we remove underline */
+        }
+
+        .search {
+            float: right;
+            padding: 12px 12px;
+            background-color: brown;
+            overflow: auto;
+            border-radius: 19px;
+            color: azure;
+        }
+
+        a:hover {
+            background-color: chocolate;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+
+        a:visited {
+            color: rgb(25, 223, 223);
+        }
+
+        /* visited is for if u click once then the color will change to  and remain that only */
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Contoso News</h1>
+        <h2>On Time, On Topic.</h2>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="basicStructure.html" target="_blank">Home</a> </li>
+                <li><a href="beforPseudoClassNavbar.html" target="_blank">About Us</a></li>
+                <li><a href="shadow.html" target="_blank">Careers</a></li>
+                <li><a href="tables.html" target="_blank">Contact US</a></li>
+
+                <div class="search">
+                    this is just a search box
+                </div>
+            </ul>
+
+        </nav>
+        <a href="#">this is a hashtag link</a> <br>
+        <button> Read More</button>
+        <a href="#">this is a new link</a> <br>
+
+    </header>
+    </body>
